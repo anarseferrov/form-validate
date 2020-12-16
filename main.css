@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --red: hsl(0, 100%, 74%);
+  --green: hsl(154, 59%, 51%);
+  --blue: hsl(248, 32%, 49%);
+  --dark-blue: hsl(249, 10%, 26%);
+  --graish-blue: hsl(246, 25%, 77%);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: url(./images/bg-intro-desktop.png) var(--red);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+main {
+  padding: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-self: flex-start;
+}
+
+section {
+  width: 450px;
+  align-self: center;
+}
+
+h1 {
+  font-size: 2.4rem;
+  color: #fff;
+}
+
+h5 {
+  font-size: 13px;
+  color: #fff;
+  font-weight: 400;
+}
+
+div {
+  background: var(--blue);
+  padding: 15px 35px;
+  text-align: center;
+  border-radius: 7px;
+  font-size: 13px;
+  font-weight: 400;
+  color: #fff;
+  box-shadow: 0 5px 15px var(--dark-blue);
+}
+
+span {
+  font-weight: 700;
+}
+
+form {
+  margin-top: 20px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 7px;
+  box-shadow: 0 5px 15px var(--dark-blue);
+  position: relative;
+}
+
+input {
+  display: block;
+  border: none;
+  border: 1px solid rgb(180, 178, 178);
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  color: var(--dark-blue);
+  font-weight: 600;
+  font-size: 13px;
+}
+
+input[type="submit"] {
+  border: none;
+  background-color: var(--green);
+  color: #fff;
+  padding: 15px 0;
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+p {
+  color: var(--dark-blue);
+  font-size: 9px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: var(--red);
+  font-weight: 700;
+}
+
+input[type="submit"]:hover {
+  opacity: 0.8;
+}
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 1.4rem;
+  }
+  main {
+    padding: 20px;
+  }
+}
+
+.error {
+  color: var(--red);
+  font-weight: 600;
+  font-style: italic;
+  font-size: 10px;
+  text-align: right;
+  margin: 0;
+  display: none;
+  padding: 0;
+}
+
+.error-icon {
+  position: absolute;
+  right: 35px;
+  padding: 15px;
+  display: none;
+}
